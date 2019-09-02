@@ -4,13 +4,13 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        # Method 2
+        # Approach 2
         dic = {}
         for x in strs:
             key = tuple(sorted(x))
             dic[key] = dic.get(key, []) + [x]
         return dic.values()
-        # Method 1
+        # Approach 1
         # dic = collections.defaultdict(list)
         # for x in strs:
         #     cnt = [0]*26

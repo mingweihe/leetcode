@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # Method 2
+        # Approach 2
         if not nums:
             return [-1, -1]
 
@@ -18,7 +18,7 @@ class Solution(object):
                 return max(l, r) if -1 in l+r else [l[0], r[1]]
             return [-1, -1]
         return search(0, len(nums)-1)
-        # Method 1
+        # Approach 1
         # res = [-1, -1]
         # if not nums: return res
         # def binarySearch(objective):

@@ -5,7 +5,7 @@ class Solution(object):
         :type numRows: int
         :rtype: str
         """
-        # Method 2
+        # Approach 2
         if numRows <= 1: return s
         res = ['']*numRows
         index, step = 0, 1
@@ -15,7 +15,7 @@ class Solution(object):
             elif index == numRows-1: step = -1
             index += step
         return ''.join(res)
-        # Method 1
+        # Approach 1
         # if numRows <= 1: return s
         # res = ['']*numRows
         # for i, x in enumerate(s):

@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        # Method 1 greedy 投石问路!!!
+        # Approach 1 greedy
         res, predicted_max, maximum = 0, 0, 0
         for i in xrange(len(nums) - 1):
             maximum = max(maximum, i + nums[i])
@@ -13,7 +13,7 @@ class Solution(object):
                 predicted_max = maximum
         return res
 
-        # Method 2 bfs 每一步都计算一遍下一步该怎么走
+        # Approach 2 bfs
         # somewhat similar to greedy method
         # if len(nums) < 2: return 0
         # level, cur_max, maximum, i = 0, 0, 0, 0

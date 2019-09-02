@@ -12,7 +12,7 @@ class Solution(object):
         :type n: int
         :rtype: ListNode
         """
-        # Method 2 two pointer
+        # Approach 2 two pointer
         dummy = ListNode(0)
         fast = slow = dummy
         dummy.next = head
@@ -24,7 +24,7 @@ class Solution(object):
         slow.next = slow.next.next
         return dummy.next
 
-        # Method 1 map / dictionary
+        # Approach 1 map / dictionary
         # sentinal = ListNode(0)
         # sentinal.next = head
         # dic = {}

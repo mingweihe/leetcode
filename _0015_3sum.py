@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: List[List[int]]
         a+b=-c
         """
-        # Method 2
+        # Approach 2
         nums.sort()
         res, L = [], len(nums)
         for i in xrange(L - 2):
@@ -26,7 +26,7 @@ class Solution(object):
                     else:
                         end -= 1
         return res
-        # Method 1 (Time Limit Exceeded)
+        # Approach 1 (Time Limit Exceeded)
         # check = set()
         # res = []
         # for i in xrange(len(nums)):

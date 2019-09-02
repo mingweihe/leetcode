@@ -4,7 +4,7 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: bool
         """
-        # Method 3
+        # Approach 3
         checker = set()
         for i in xrange(9):
             for j in xrange(9):
@@ -18,7 +18,7 @@ class Solution(object):
                 checker.add(z)
         return True
 
-        # Method 2
+        # Approach 2
         # def valid(i, j):
         #     for k in xrange(9):
         #         if k == j: continue
@@ -38,7 +38,7 @@ class Solution(object):
         #             return False
         # return True
 
-        # Method 1
+        # Approach 1
         # for i in xrange(9):
         #     row, col, square = set(), set(), set()
         #     for j in xrange(9):

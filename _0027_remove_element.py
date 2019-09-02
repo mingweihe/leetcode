@@ -5,7 +5,7 @@ class Solution:
         :type val: int
         :rtype: int
         """
-        # Method 1
+        # Approach 1
         cnt = 0
         for i in range(len(nums)):
             if nums[i] == val:
@@ -14,7 +14,7 @@ class Solution:
                 nums[i - cnt] = nums[i]
         return len(nums) - cnt
 
-        # Method 2
+        # Approach 2
         # if not nums: return 0
         # tail_index = len(nums) - 1
         # for i in range(len(nums)-1, -1, -1):

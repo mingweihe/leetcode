@@ -5,7 +5,7 @@ class Solution(object):
         :type p: str
         :rtype: bool
         """
-        # Method 2
+        # Approach 2
         len_s, len_p = len(s), len(p)
         dp = [[False]*(len_p+1) for _ in xrange(len_s+1)]
         dp[0][0] = True
@@ -28,5 +28,5 @@ class Solution(object):
                         dp[i+1][j+1] = dp[i+1][j] or dp[i][j+1] or dp[i+1][j-1]
                 # other cases are false
         return dp[len_s][len_p]
-        # Method 1
+        # Approach 1
         # return re.match('^{}$'.format(p), s)

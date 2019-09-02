@@ -4,7 +4,7 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        # Method 1
+        # Approach 1
         left, right = 0, len(height) - 1
         max_left = max_right = 0
         res = 0
@@ -22,7 +22,7 @@ class Solution(object):
                     res += max_right - height[right]
                 right -= 1
         return res
-        # Method 2
+        # Approach 2
         # res = 0
         # i = 0
         # stack = []

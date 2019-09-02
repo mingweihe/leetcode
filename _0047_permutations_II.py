@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        # Method 3 -> swap
+        # Approach 3 -> swap
         res = []
         if not nums: return res
         nums.sort()
@@ -27,7 +27,7 @@ class Solution(object):
                 return True
         return False
 
-    # Method 2 -> used array
+    # Approach 2 -> used array
     #     res = []
     #     if not nums: return res
     #     nums.sort()
@@ -47,7 +47,7 @@ class Solution(object):
     #         used[i] = False
     #         cur.pop()
 
-    #     Method 1
+    #     Approach 1
     #     res = []
     #     if not nums: return res
     #     nums.sort()

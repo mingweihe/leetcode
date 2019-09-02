@@ -5,11 +5,11 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-        # Method 1
+        # Approach 1
         # if needle in haystack: return haystack.index(needle)
         # return -1
         return haystack.find(needle)
-        # Method 2
+        # Approach 2
         if needle == '': return 0
         l1, l2 = len(haystack), len(needle)
         scale = l1 - l2 + 1
