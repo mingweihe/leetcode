@@ -13,7 +13,6 @@ class Solution(object):
                 matrix[row_begin][i] = num
                 num += 1
             row_begin += 1
-            print matrix
             for i in xrange(row_begin, row_end+1):
                 matrix[i][col_end] = num
                 num += 1

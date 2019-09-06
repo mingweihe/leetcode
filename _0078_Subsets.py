@@ -6,6 +6,7 @@ class Solution(object):
         """
         # Approach 2 dfs/backtracking
         res = []
+
         def helper(cur, start):
             res.append(list(cur))
             for i in xrange(start, len(nums)):
@@ -14,7 +15,8 @@ class Solution(object):
                 cur.pop()
         helper([], 0)
         return res
-        # Approach bfs/interation
+
+        # Approach 1 bfs/iteration
         # res = [[]]
         # for x in nums:
         #     for i in xrange(len(res)):

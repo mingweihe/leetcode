@@ -12,7 +12,7 @@ class Solution(object):
         :type n: int
         :rtype: List[TreeNode]
         """
-        # Approach 1 dynamic programming
+        # Approach 2 dynamic programming
         if n == 0: return []
         dp = [[] for _ in xrange(n + 1)]
         dp[0].append(None)
@@ -27,7 +27,7 @@ class Solution(object):
                         root.right = self.clone(right, j + 1)
                         dp[i].append(root)
         return dp[n]
-        # Approach 2 dfs
+        # Approach 1 dfs
         # if n == 0: return []
         # return self.helper(1, n)
 

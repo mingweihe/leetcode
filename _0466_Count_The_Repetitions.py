@@ -24,6 +24,7 @@ class Solution(object):
             if l > -1: break
         if l > n1: return dp[n1]//n2
         return ((n1-l)//(r-l)*(dp[r]-dp[l])+dp[(n1-l)%(r-l)+l])//n2
+
         # Approach 1
         # i = j = cnts1 = cnts2 = 0
         # ls1, ls2 = len(s1), len(s2)

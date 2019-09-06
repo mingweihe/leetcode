@@ -19,6 +19,7 @@ class Solution(object):
             if res[-1][1] != -hq[0][0]:
                 res.append([l, -hq[0][0]])
         return res[1:]
+
         # Approach 1 O(n^2) -> TLE
         # res, heights = [], []
         # for x in buildings:

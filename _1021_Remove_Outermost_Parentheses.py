@@ -12,6 +12,7 @@ class Solution(object):
             if c == ')' and cnt > 1: res.append(c)
             cnt += 1 if c == '(' else -1
         return ''.join(res)
+
         # Approach 1, inspired by valid parentheses
         # res = ''
         # stack = []

@@ -5,10 +5,11 @@ class Solution(object):
         :type K: int
         :rtype: str
         """
-        # Approach 1
+        # Approach 2
         s = S.replace('-', '')[::-1].upper()
         return '-'.join(s[i:i + K] for i in range(0, len(s), K))[::-1]
-        # Approach 2
+
+        # Approach 1
         # S = S.replace('-', '').upper()[::-1]
         #
         # def chunks():

@@ -34,4 +34,3 @@ class Solution(object):
             if index == n or count < 4:
                 break
         return index
-

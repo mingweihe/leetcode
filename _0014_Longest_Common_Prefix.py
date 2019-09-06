@@ -12,6 +12,7 @@ class Solution(object):
                 if c != s[i]:
                     return shortest[:i]
         return shortest
+
         # Approach 1
     #     if len(strs) == 0: return ''
     #     common = strs[0]

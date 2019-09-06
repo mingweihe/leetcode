@@ -11,14 +11,6 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        # Approach 1 - recursion
-        # if not l1: return l2
-        # if not l2: return l1
-        # carry, val = divmod(l1.val+l2.val, 10)
-        # node = ListNode(val)
-        # if carry: l1.next = self.addTwoNumbers(l1.next, ListNode(carry))
-        # node.next = self.addTwoNumbers(l1.next, l2.next)
-        # return node
         # Approach 2 - iteration ##
         carry = 0
         root = n = ListNode(0)
@@ -34,3 +26,13 @@ class Solution(object):
             n.next = ListNode(val)
             n = n.next
         return root.next
+
+        # Approach 1 - recursion
+        # if not l1: return l2
+        # if not l2: return l1
+        # carry, val = divmod(l1.val+l2.val, 10)
+        # node = ListNode(val)
+        # if carry: l1.next = self.addTwoNumbers(l1.next, ListNode(carry))
+        # node.next = self.addTwoNumbers(l1.next, l2.next)
+        # return node
+

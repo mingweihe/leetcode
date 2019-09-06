@@ -11,14 +11,6 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        # Approach 1
-        # cH = head
-        # while cH:
-        #     if cH.val == 'passed': return True
-        #     cH.val = 'passed'
-        #     cH = cH.next
-        # return False
-
         # Approach 2
         if not head: return False
         slow = head
@@ -29,3 +21,10 @@ class Solution(object):
             if slow is fast: return True
         return False
 
+        # Approach 1
+        # cH = head
+        # while cH:
+        #     if cH.val == 'passed': return True
+        #     cH.val = 'passed'
+        #     cH = cH.next
+        # return False

@@ -5,13 +5,14 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        # Approach 1
+        # Approach 2
         dic = {}
         for i in range(len(numbers)):
             if target - numbers[i] in dic:
                 return [dic[target - numbers[i]] + 1, i + 1]
             dic[numbers[i]] = i
-        # Approach 2
+
+        # Approach 1
         # l, r = 0, len(numbers) - 1
         # while l < r:
         #     s = numbers[l] + numbers[r]
@@ -21,4 +22,3 @@ class Solution(object):
         #         l += 1
         #     else:
         #         r -= 1
-

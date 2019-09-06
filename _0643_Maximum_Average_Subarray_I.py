@@ -11,6 +11,7 @@ class Solution(object):
         # Approach 2
         cums = np.cumsum([0] + nums)
         return max(cums[k:] - cums[:-k]) / float(k)
+
         # Approach 1
         # M = sum(nums[:k])
         # cur = M

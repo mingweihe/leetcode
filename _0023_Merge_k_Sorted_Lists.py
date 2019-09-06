@@ -14,7 +14,7 @@ class Solution(object):
         :type lists: List[ListNode]
         :rtype: ListNode
         """
-        # Approach 2, n*logk [n=number of all nodes in lists]
+        # Approach 2, n*log(k) [n=number of all nodes in lists]
         cur_node = dummy = ListNode(0)
         q = PriorityQueue()
         for node in lists:
@@ -25,6 +25,7 @@ class Solution(object):
             if cur_node.next:
                 q.put((cur_node.next.val, cur_node.next))
         return dummy.next
+
         # Approach 1 k*n [n=average length of nodes in lists]
         # sentinel = ListNode(0)
         # cur_node = sentinel

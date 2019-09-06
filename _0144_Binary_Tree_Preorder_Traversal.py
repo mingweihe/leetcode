@@ -12,7 +12,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        # Approach 1
+        # Approach 2
         if not root: return []
         res = []
         stack = [root]
@@ -22,7 +22,8 @@ class Solution(object):
             if node.right: stack.append(node.right)
             if node.left: stack.append(node.left)
         return res
-        # Approach 2
+
+        # Approach 1
         # if not root: return []
         # res = []
         # stack = []
@@ -37,7 +38,3 @@ class Solution(object):
         #         stack.append(node)
         #         node = node.left
         # return res
-
-
-
-

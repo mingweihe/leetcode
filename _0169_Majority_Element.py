@@ -16,6 +16,7 @@ class Solution(object):
                 majar = nums[i]
                 cnt = 1
         return majar
+
         # Approach 1 O(n*log(n))
         # nums.sort()
         # return nums[len(nums)//2]

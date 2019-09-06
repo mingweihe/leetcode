@@ -7,6 +7,7 @@ class Solution(object):
         # Approach 2
         row, col = map(max, grid), map(max, zip(*grid))
         return sum(min(x, y) for x in row for y in col) - sum(map(sum, grid))
+
         # Approach 1
         # rows_max = [max(x) for x in grid]
         # cols_max = [max(x) for x in zip(*grid)]

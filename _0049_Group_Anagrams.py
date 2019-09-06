@@ -10,6 +10,7 @@ class Solution(object):
             key = tuple(sorted(x))
             dic[key] = dic.get(key, []) + [x]
         return dic.values()
+
         # Approach 1
         # dic = collections.defaultdict(list)
         # for x in strs:

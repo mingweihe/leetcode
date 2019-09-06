@@ -12,14 +12,14 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
-        # Approach 1 recursion
+        # Approach 2 recursion
         if not root: return root
         right = self.invertTree(root.right)
         root.right = self.invertTree(root.left)
         root.left = right
         return root
 
-        # Approach 2 iteration
+        # Approach 1 iteration
         # if not root: return root
         # s = [root]
         # while s:

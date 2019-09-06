@@ -4,7 +4,7 @@ class Solution(object):
         :type num: int
         :rtype: List[str]
         """
-        # Approach 1
+        # Approach 3
         res = []
         for i in range(12):
             num1ini = bin(i).count('1')
@@ -22,5 +22,5 @@ class Solution(object):
         #             res.append('%d:%02d'%(j,i))
         # return res
         
-        # Approach 3
+        # Approach 1
         # return ['%d:%02d'%(h,m) for h in range(12) for m in range(60) if (bin(h)+bin(m)).count('1') == num]

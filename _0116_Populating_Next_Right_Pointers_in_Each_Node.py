@@ -13,16 +13,6 @@ class Solution(object):
         :type root: Node
         :rtype: Node
         """
-        # Approach 1
-        # if not root: return
-        # if root.left:
-        #     root.left.next = root.right
-        # if root.right and root.next:
-        #     root.right.next = root.next.left
-        # self.connect(root.left)
-        # self.connect(root.right)
-        # return root
-
         # Approach 2
         dummy = root
         while dummy:
@@ -35,3 +25,13 @@ class Solution(object):
                 node = node.next
             dummy = dummy.left
         return root
+
+        # Approach 1
+        # if not root: return
+        # if root.left:
+        #     root.left.next = root.right
+        # if root.right and root.next:
+        #     root.right.next = root.next.left
+        # self.connect(root.left)
+        # self.connect(root.right)
+        # return root

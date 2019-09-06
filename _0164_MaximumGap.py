@@ -23,6 +23,7 @@ class Solution(object):
             bucket[1] = x if bucket[1] is None else max(bucket[1], x)
         buckets = [x for x in buckets if x[0] is not None]
         return max(buckets[i][0] - buckets[i - 1][1] for i in xrange(1, len(buckets)))
+
         # Approach 1 radix sort
         # if len(nums) < 2: return 0
         # def radix_sort(A):

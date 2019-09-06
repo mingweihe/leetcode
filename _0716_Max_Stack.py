@@ -2,7 +2,7 @@ class MaxStack(object):
     # because the existence of popMax operation
     # we can't make maximum operation at O(1) time complexity
     # O(log(n)) is what we can do
-    class Node:
+    class Node(object):
         def __init__(self, val):
             self.val = val
             self.prev = self.next = None

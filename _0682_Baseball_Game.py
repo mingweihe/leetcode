@@ -4,7 +4,7 @@ class Solution(object):
         :type ops: List[str]
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         stack = []
         for x in ops:
             if x[-1].isdigit():
@@ -16,7 +16,8 @@ class Solution(object):
             else:
                 stack.pop()
         return sum(stack)
-        # Approach 2
+
+        # Approach 1
         # points = [0] * len(ops)
         # lastValRd = -1
         # for x in ops:

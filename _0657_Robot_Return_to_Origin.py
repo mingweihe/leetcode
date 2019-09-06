@@ -6,6 +6,7 @@ class Solution(object):
         """
         # Approach 2
         return moves.count('U') == moves.count('D') and moves.count('L') == moves.count('R')
+
         # Approach 1
         # u,d,l,r = 0,0,0,0
         # for x in moves:

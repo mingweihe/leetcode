@@ -5,8 +5,6 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        # Approach 1
-        # return sorted(s) == sorted(t)
         # Approach 2
         if not len(s) == len(t):
             return False
@@ -21,3 +19,6 @@ class Solution(object):
             else:
                 dic1[t[i]] += 1
         return dic == dic1
+
+        # Approach 1
+        # return sorted(s) == sorted(t)

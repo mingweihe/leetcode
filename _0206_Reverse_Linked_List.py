@@ -11,14 +11,11 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
-        # Approach 1 separating
-        # pre = None
-        # while head:
-        #     temp = head.next
-        #     head.next = pre
-        #     pre = head
-        #     head = temp
-        # return pre
+        # Approach 3 recursion
+        if not head: return p
+        node = head.next
+        head.next = p
+        return self.reverseList(node, head)
 
         # Approach 2 connecting
         # dummy = ListNode(0)
@@ -30,8 +27,11 @@ class Solution(object):
         #     dummy.next = temp
         # return dummy.next
 
-        # Approach 3 recursion
-        if not head: return p
-        node = head.next
-        head.next = p
-        return self.reverseList(node, head)
+        # Approach 1 separating
+        # pre = None
+        # while head:
+        #     temp = head.next
+        #     head.next = pre
+        #     pre = head
+        #     head = temp
+        # return pre

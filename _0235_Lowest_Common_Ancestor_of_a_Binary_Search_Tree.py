@@ -14,7 +14,7 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        # Approach 1
+        # Approach 2
         n = root
         if p.val > q.val:
             t = p
@@ -27,7 +27,7 @@ class Solution(object):
             else:
                 n = n.left
 
-        # Approach 2
+        # Approach 1
     #     if q.val < p.val: return self.helper(root, q, p)
     #     return self.helper(root, p, q)
     #

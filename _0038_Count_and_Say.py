@@ -1,4 +1,4 @@
-class Solution:
+class Solution(object):
     def countAndSay(self, n):
         """
         :type n: int

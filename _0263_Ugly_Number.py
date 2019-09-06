@@ -12,4 +12,3 @@ class Solution(object):
             if t == 1: return True
             if t == num: return False
             num = t
-

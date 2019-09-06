@@ -6,8 +6,10 @@ class Solution(object):
         """
         # Approach 3
         return str.lower()
+
         # Approach 2
         # return ''.join([chr(ord(c) + 32) if 'A' <= c <= 'Z' else c for c in str])
+
         # Approach 1
         # res = ''
         # for c in str:
@@ -16,4 +18,3 @@ class Solution(object):
         #         c = chr(ascii_num + 32)
         #     res += c
         # return res
-

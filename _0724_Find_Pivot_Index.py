@@ -12,6 +12,7 @@ class Solution(object):
                 return i
             left_sum += x
         return -1
+
         # Approach 1
         # accum, total = 0, sum(nums)
         # for i, x in enumerate(nums):

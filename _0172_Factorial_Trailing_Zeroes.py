@@ -4,11 +4,12 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         seed, res = 5, 0
         while seed <= n:
             res += n // seed
             seed *= 5
         return res
-        # Approach 2
+
+        # Approach 1
         # return 0 if n < 5 else n // 5 + self.trailingZeroes(n // 5)

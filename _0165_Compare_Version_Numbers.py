@@ -13,6 +13,7 @@ class Solution(object):
             if num1 < num2: return -1
             elif num1 > num2: return 1
         return 0
+
         # Approach 1
         # def pre_processing(x):
         #     x = map(int, x.split('.'))

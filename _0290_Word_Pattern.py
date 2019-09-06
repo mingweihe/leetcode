@@ -5,9 +5,10 @@ class Solution(object):
         :type str: str
         :rtype: bool
         """
-        # Approach 1
-        return list(map(pattern.find, pattern)) == list(map(str.split().index, str.split()))
         # Approach 2
+        return list(map(pattern.find, pattern)) == list(map(str.split().index, str.split()))
+
+        # Approach 1
         # d = {}
         # a1, a2 = list(pattern), str.split(' ')
         # if len(a1) != len(a2): return False

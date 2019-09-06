@@ -24,5 +24,6 @@ class Solution(object):
             return '1' + ''.join(map(str, temp))
         else:
             return ''.join(map(str, temp))
+
         # Approach 1
         # return bin(int(a, 2) + int(b, 2))[2:]

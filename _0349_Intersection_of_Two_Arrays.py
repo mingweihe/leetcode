@@ -5,10 +5,11 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        # Approach 1
+        # Approach 2
         # set operations: | ^ &
         return list(set(nums1) & set(nums2))
-        # Approach 2
+
+        # Approach 1
         # d, res = {}, []
         # for i in nums1: d[i] = 0
         # for i in nums2:

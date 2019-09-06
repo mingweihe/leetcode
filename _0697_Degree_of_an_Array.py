@@ -16,6 +16,7 @@ class Solution(object):
             end[x] = i
         lens = [end[c]-begin[c]+1 for c in cnts if cnts[c] == degree]
         return min(lens)
+
         # Approach 1
         # setN = set(nums)
         # if len(setN) == len(nums): return 1

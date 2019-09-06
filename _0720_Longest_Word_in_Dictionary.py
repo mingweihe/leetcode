@@ -11,6 +11,7 @@ class Solution(object):
             if all(word[:k] in wordset for k in range(1, len(word))):
                 return word
         return ""
+
         # Approach 1
         # res = ''
         # valid = set([''])

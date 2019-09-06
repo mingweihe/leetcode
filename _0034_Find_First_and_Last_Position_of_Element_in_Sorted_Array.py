@@ -18,6 +18,7 @@ class Solution(object):
                 return max(l, r) if -1 in l+r else [l[0], r[1]]
             return [-1, -1]
         return search(0, len(nums)-1)
+
         # Approach 1
         # res = [-1, -1]
         # if not nums: return res

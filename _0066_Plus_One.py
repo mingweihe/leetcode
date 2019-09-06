@@ -23,5 +23,6 @@ class Solution(object):
         if carry:
             digits.insert(0, 1)
         return digits
+
         # Approach 1
         # return list(map(int, str(int(''.join(map(str, digits))) + 1)))

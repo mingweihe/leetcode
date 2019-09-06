@@ -1,9 +1,9 @@
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
 class Solution(object):
@@ -12,7 +12,7 @@ class Solution(object):
         :type root: TreeNode
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         self.res = 0
 
         def depth(node):
@@ -23,7 +23,8 @@ class Solution(object):
 
         depth(root)
         return self.res
-        # Approach 2
+
+        # Approach 1
         # self.res = 0
         #
         # def depth(node, L):

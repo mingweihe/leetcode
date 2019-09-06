@@ -14,14 +14,15 @@ class Solution(object):
         100 4
         G(i) = i ^ (i/2)
         """
-        # Approach 2 : iteration
-        res = [0]
-        for i in xrange(n):
-            for j in xrange(len(res) - 1, -1, -1):
-                res.append(res[j] | 1 << i)
+        # Approach 2 : formula G(i) = i ^ (i/2)
+        res = []
+        for i in xrange(1 << n):
+            res.append(i ^ i >> 1)
         return res
-        # Approach 1 : formula G(i) = i ^ (i/2)
-        # res = []
-        # for i in xrange(1 << n):
-        #     res.append(i ^ i >> 1)
+
+        # Approach 1 : iteration
+        # res = [0]
+        # for i in xrange(n):
+        #     for j in xrange(len(res) - 1, -1, -1):
+        #         res.append(res[j] | 1 << i)
         # return res

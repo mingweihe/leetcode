@@ -4,7 +4,8 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        # Approach 1
-        # return sum(map(int, list(bin(n)[2:])))
         # Approach 2
         return bin(n).count('1')
+
+        # Approach 1
+        # return sum(map(int, list(bin(n)[2:])))

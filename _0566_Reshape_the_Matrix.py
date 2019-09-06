@@ -9,15 +9,17 @@ class Solution(object):
         :type c: int
         :rtype: List[List[int]]
         """
-        # Approach 1
+        # Approach 3
         try: return np.array(nums).reshape([r,c]).tolist()
         except Exception: return nums
+
         # Approach 2
         # flat = sum(nums, [])
         # if len(flat) != r * c: return nums
         # tuples = zip(*([iter(flat)] * c))
         # return map(list, tuples)
-        # Approach 2
+
+        # Approach 1
         # if not nums[0]: return nums
         # LR, LC = len(nums), len(nums[0])
         # if LR * LC != r * c: return nums

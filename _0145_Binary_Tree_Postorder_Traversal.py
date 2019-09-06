@@ -24,6 +24,7 @@ class Solution(object):
                     stack.append((node.right, False))
                     stack.append((node.left, False))
         return res
+
         # Approach 1
         # if not root: return []
         # res = []

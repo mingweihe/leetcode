@@ -5,11 +5,12 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
-        # Approach 1
+        # Approach 2
         for i in set(ransomNote):
             if ransomNote.count(i) > magazine.count(i): return False
         return True
-        # Approach 2
+
+        # Approach 1
         # d = {}
         # for i in magazine:
         #     if i in d:

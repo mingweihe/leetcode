@@ -8,7 +8,7 @@ class Solution(object):
         :rtype: str
         """
         stack = []
-        paths =  re.split('/+', path)
+        paths = re.split('/+', path)
         for x in paths:
             if x == '..':
                 if stack:

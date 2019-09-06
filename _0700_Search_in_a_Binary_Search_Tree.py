@@ -22,9 +22,9 @@ class Solution(object):
             else:
                 root = root.left
         return None
+
         # Approach 1
         # if not root or root.val == val:
         #     return root
         # return self.searchBST(root.left, val) \
         #     or self.searchBST(root.right, val)
-

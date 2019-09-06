@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        # Approach 1
+        # Approach 3
         return s in (s+s)[1:-1]
 
         # Approach 2
@@ -13,7 +13,7 @@ class Solution(object):
         #     if s.count(s[:i])*i==len(s): return True
         # return False
 
-        # Approach 3
+        # Approach 1
         # i, j, n = 1, 0, len(s)
         # dp = [0] * (n + 1)
         # while i < n:

@@ -24,6 +24,7 @@ class Solution(object):
                     cur += cnts[frozenset(pre + ''.join(candidate))]
             res += [cur]
         return res
+
         # Approach 1 frozenset, itertools.product, itertools.compress
         # words = [frozenset(word) for word in words if len(set(word)) < 8]
         # cnts = collections.Counter(words)

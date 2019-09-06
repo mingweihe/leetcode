@@ -6,7 +6,7 @@ class Solution(object):
         easy solution: backtracking/dfs to solve this puzzle
         better solutioin: refer to python3 code
         """
-        # Approach 1
+        # Approach 2
         def solve():
             for i in xrange(9):
                 for j in xrange(9):
@@ -28,7 +28,7 @@ class Solution(object):
             if board[k][j] == filled_c: return False
             if board[i / 3 * 3 + k / 3][j / 3 * 3 + k % 3] == filled_c: return False
         return True
-    # Approach 2, super fast
+    # Approach 1, faster
     # def solveSudoku(self, board: List[List[str]]) -> None:
     #     """
     #     Do not return anything, modify board in-place instead.

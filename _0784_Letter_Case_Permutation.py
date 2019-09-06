@@ -13,7 +13,7 @@ class Solution(object):
                 res = [i+c for i in res]
         return res
 
-        # Approach 3: recursion ##
+        # Approach 3: recursion
         # if not S: return ['']
         # c = S[0]
         # sub_set = self.letterCasePermutation(S[1:])

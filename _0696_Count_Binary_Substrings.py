@@ -4,11 +4,7 @@ class Solution(object):
         011000111100000
         1+2+3+4
         """
-        # s = map(len, s.replace('10', '1 0').replace('01', '0 1').split())
-        # return sum(min(a, b) for a, b in zip(s, s[1:]))
-        """
-        no need to accumulate res everytime, accumulate when necessary
-        """
+        # Approach 2
         last = s[0]
         res = lastLen = curLen = 0
         for c in s:
@@ -22,5 +18,6 @@ class Solution(object):
         res += min(lastLen, curLen)
         return res
 
-
-
+        # Approach 1
+        # s = map(len, s.replace('10', '1 0').replace('01', '0 1').split())
+        # return sum(min(a, b) for a, b in zip(s, s[1:]))

@@ -15,6 +15,7 @@ class Solution(object):
             elif index == numRows-1: step = -1
             index += step
         return ''.join(res)
+
         # Approach 1
         # if numRows <= 1: return s
         # res = ['']*numRows

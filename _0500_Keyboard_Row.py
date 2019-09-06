@@ -7,6 +7,9 @@ class Solution(object):
         :type words: List[str]
         :rtype: List[str]
         """
+        # Approach 2
+        return filter(re.compile('(?i)([qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*)$').match, words)
+
         # Approach 1
         # res=[]
         # alphabet=['qwertyuiop','asdfghjkl','zxcvbnm']
@@ -21,5 +24,3 @@ class Solution(object):
         #             res.append(i)
         #             break
         # return res
-        # Approach 2
-        return filter(re.compile('(?i)([qwertyuiop]*|[asdfghjkl]*|[zxcvbnm]*)$').match, words)

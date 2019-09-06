@@ -1,11 +1,11 @@
-class Solution:
+class Solution(object):
     def removeElement(self, nums, val):
         """
         :type nums: List[int]
         :type val: int
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         cnt = 0
         for i in range(len(nums)):
             if nums[i] == val:
@@ -14,7 +14,7 @@ class Solution:
                 nums[i - cnt] = nums[i]
         return len(nums) - cnt
 
-        # Approach 2
+        # Approach 1
         # if not nums: return 0
         # tail_index = len(nums) - 1
         # for i in range(len(nums)-1, -1, -1):

@@ -8,9 +8,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Approach 1
-        return min([s.index(i) for i in string.ascii_lowercase if s.count(i) == 1] or [-1])
         # Approach 2
+        return min([s.index(i) for i in string.ascii_lowercase if s.count(i) == 1] or [-1])
+
+        # Approach 1
         # d = {}
         # for i in s:
         #     if i in d:

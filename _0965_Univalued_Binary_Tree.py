@@ -20,7 +20,7 @@ class Solution(object):
 
         return dfs(root)
 
-        # Approach 2 interation(in order)
+        # Approach 2 iteration(in order)
         # unival = root.val
         # stack, node = [], root
         # while stack or node:

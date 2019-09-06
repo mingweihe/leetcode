@@ -14,6 +14,7 @@ class Solution(object):
         p = re.findall('\w+', paragraph.lower())
         counters = collections.Counter(x for x in p if x not in ban)
         return counters.most_common()[0][0]
+
         # Approach 1
         # res_word = ''
         # res_frequent = 0

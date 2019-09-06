@@ -10,6 +10,7 @@ class Solution(object):
         # Approach 2
         Y, M, D = map(int, date.split('-'))
         return int((datetime.datetime(Y, M, D) - datetime.datetime(Y, 1, 1)).days + 1)
+
         # Approach 1
         # long_months = [1, 3, 5, 7, 8, 10, 12]
         # date = date.split('-')

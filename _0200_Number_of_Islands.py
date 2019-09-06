@@ -12,8 +12,8 @@ class Solution(object):
                 map(sink, [i, i, i + 1, i - 1], [j + 1, j - 1, j, j])
                 return 1
             return 0
-
         return sum(sink(i, j) for i in xrange(len(grid)) for j in xrange(len(grid[i])))
+
         # Approach 1
         # H = len(grid)
         # if H == 0: return 0

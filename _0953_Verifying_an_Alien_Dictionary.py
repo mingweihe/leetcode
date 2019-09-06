@@ -7,6 +7,7 @@ class Solution(object):
         """
         # Approach 2
         return words == sorted(words, key=lambda w: map(order.index, w))
+
         # Approach 1
         # dic = {x:i for i,x in enumerate(order)}
         # words = [[dic[w] for w in word] for word in words]

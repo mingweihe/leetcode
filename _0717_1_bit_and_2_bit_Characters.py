@@ -13,6 +13,7 @@ class Solution(object):
             else:
                 i += 2
         return i == len(bits) - 1
+
         # Approach 1
         # cnt = 0
         # for x in bits[::-1][1:]:

@@ -4,12 +4,12 @@ class Solution(object):
         :type num: int
         :rtype: str
         """
-        # Approach 1
+        # Approach 2
         if num < 0: return '-'+self.convertToBase7(-num)
         if num < 7: return str(num)
         return self.convertToBase7(num//7)+str(num%7)
 
-        # Approach 2
+        # Approach 1
         # if num == 0: return '0'
         # t = abs(num)
         # res = ''

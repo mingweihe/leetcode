@@ -10,6 +10,7 @@ class Solution(object):
         """
         # Approach 2
         return list((collections.Counter(nums1) & collections.Counter(nums2)).elements())
+
         # Approach 1
         # d, res={}, []
         # for i in nums1:

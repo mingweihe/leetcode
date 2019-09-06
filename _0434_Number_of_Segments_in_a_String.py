@@ -4,8 +4,8 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         return sum(s[i] != ' ' and (i == 0 or s[i - 1] == ' ') for i in range(len(s)))
 
-        # Approach 2
+        # Approach 1
         # return len(s.split())

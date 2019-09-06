@@ -6,6 +6,7 @@ class Solution(object):
         """
         # Approach 4
         return n == 2 ** (int(n).bit_length() - 1)
+
         # Approach 3
         # n = float(n)
         # while True:
@@ -26,4 +27,3 @@ class Solution(object):
         # if n == 1: return True
         # if n * 10 % 10 or n < 1: return False
         # return self.isPowerOfTwo(n/2)
-

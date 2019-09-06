@@ -11,6 +11,7 @@ class Solution(object):
         """
         # Approach 2
         return int(math.ceil(math.log(buckets)/math.log(minutesToTest/minutesToDie+1)))
+
         # Approach 1
         # res, a = 0, minutesToTest // minutesToDie + 1
         # while a ** res < buckets: res += 1

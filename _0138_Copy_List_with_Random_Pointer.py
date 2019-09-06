@@ -12,8 +12,7 @@ class Solution(object):
         :type head: Node
         :rtype: Node
         """
-        # Approach 2 1-1'-2-2'-3-3'
-        # Approach 1 map
+        # Approach 2 map
         maps = dict()
         node = head
         while node:
@@ -25,3 +24,5 @@ class Solution(object):
             maps[node].random = maps.get(node.random)
             node = node.next
         return maps.get(head)
+
+        # Approach 2 1-1'-2-2'-3-3'

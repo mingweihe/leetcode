@@ -1,14 +1,16 @@
-class Solution:
+class Solution(object):
     def findKthLargest(self, nums, k):
         """
         :type nums: List[int]
         :type k: int
         :rtype: int
         """
-        # Approach 1
-        # return sorted(nums)[len(nums) - k]
+
         # Approach 2
         return self.helper(nums, 0, len(nums) - 1, k)
+
+        # Approach 1
+        # return sorted(nums)[len(nums) - k]
 
     def helper(self, nums, left, right, k):
         l, r = left + 1, right

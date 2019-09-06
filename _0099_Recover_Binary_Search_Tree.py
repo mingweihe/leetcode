@@ -17,6 +17,7 @@ class Solution(object):
             self.second
         """
         if not root: return
+
         def dfs(node):
             if not node: return
             dfs(node.left)

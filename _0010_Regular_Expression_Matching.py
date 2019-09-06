@@ -28,5 +28,6 @@ class Solution(object):
                         dp[i+1][j+1] = dp[i+1][j] or dp[i][j+1] or dp[i+1][j-1]
                 # other cases are false
         return dp[len_s][len_p]
+
         # Approach 1
         # return re.match('^{}$'.format(p), s)

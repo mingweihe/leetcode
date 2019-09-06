@@ -19,6 +19,7 @@ class Solution(object):
                 R = P[i] + C
         max_len, center_index = max((x,i) for i,x in enumerate(P))
         return s[(center_index-max_len)/2:(center_index+max_len)/2]
+
         # Approach 3
         # if s == s[::-1]: return s
         # start, max_len = 0, 1
@@ -30,6 +31,7 @@ class Solution(object):
         #         start = i-max_len
         #         max_len += 1
         # return s[start:start+max_len]
+
         # Approach 2
         # start, max_len = 0, 0
         # dp = [[False]*len(s) for i in xrange(len(s))]
@@ -41,6 +43,7 @@ class Solution(object):
         #             if cur_len > max_len:
         #                 start, max_len = i, cur_len
         # return s[start:start+max_len]
+
         # Approach 1
         # def extendAroundCenter(s, l, r):
         #     while l > -1 and r < len(s) and s[l] == s[r]:

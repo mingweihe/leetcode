@@ -10,4 +10,3 @@ class Solution(object):
         # Approach 1
         # m = min(nums)
         # return sum(i - m for i in nums)
-

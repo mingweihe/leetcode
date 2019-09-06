@@ -18,6 +18,7 @@ class Solution(object):
                     cur = sub + '.' + cur
                 d[cur] = d.get(cur, 0) + cnt
         return ['%d %s' % (v, k) for k, v in d.items()]
+
         # Approach 1
         # d = collections.Counter()
         # for x in cpdomains:

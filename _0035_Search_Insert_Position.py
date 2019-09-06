@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        # Approach 1
+        # Approach 2
         l, r = 0, len(nums) - 1
         while l <= r:
             mid = (l + r) // 2
@@ -15,7 +15,7 @@ class Solution(object):
                 r -= 1
         return l
 
-        # Approach 2
+        # Approach 1
         # if not nums: return 0
         # l, r = 0, len(nums) - 1
         # while True:

@@ -17,6 +17,7 @@ class Solution(object):
             else:
                 i, j = i + 1, j - 1
         return True
+
         # Approach 1
         # def isPalindrome(s, l, r):
         #     while l<r:

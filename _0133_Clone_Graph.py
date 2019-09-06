@@ -11,7 +11,7 @@ class Solution(object):
         :type node: Node
         :rtype: Node
         """
-        # Approach 1 BFS
+        # Approach 2 BFS
         if not node: return node
         queue = [node]
         sets = set()
@@ -33,7 +33,7 @@ class Solution(object):
                     nn.neighbors.append(dic[xn])
         return dic[node]
 
-        # Approach 2 DFS
+        # Approach 1 DFS
         # return self.helper(node, {})
 
     # def helper(self, node, maps):

@@ -36,5 +36,6 @@ class Solution(object):
             left += 1
             if i == l: break
         return res
+
         # Approach 1 numpy and recursion
-        return [] if not matrix else list(matrix[0]) + self.spiralOrder(np.transpose(matrix[1:])[::-1].tolist())
+        # return [] if not matrix else list(matrix[0]) + self.spiralOrder(np.transpose(matrix[1:])[::-1].tolist())

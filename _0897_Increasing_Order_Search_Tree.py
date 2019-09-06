@@ -19,6 +19,7 @@ class Solution(object):
         root.left = None
         root.right = self.increasingBST(root.right, tail)
         return res
+
         # Approach 1
     #     if not root: return root
     #     arr = []
@@ -35,4 +36,3 @@ class Solution(object):
     #         self.helper(arr, node.left)
     #         arr.append(node)
     #         self.helper(arr, node.right)
-
