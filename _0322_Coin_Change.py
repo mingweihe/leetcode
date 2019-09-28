@@ -1,23 +1,30 @@
 class Solution(object):
     def coinChange(self, coins, amount):
-        if amount == 0: return 0
-        coins.sort(reverse=True)
-        self.result = amount + 1
+        """
+        :type coins: List[int]
+        :type amount: int
+        :rtype: int
+        """
+        # Approach 2 dynamic programming
+        dp = [0] + [float('inf')] * (amount)
+        for i in xrange(1, amount+1):
+            for coin in coins:
+                if coin <= i:
+                    dp[i] = min(dp[i], dp[i-coin]+1)
+        return -1 if dp[amount] == float('inf') else dp[amount]
 
-        def dfs_pruning(coins, remain, index, count, checked=False):
-            if not checked:
-                p = (remain // coins[index])
-                if remain % coins[index] == 0:
-                    self.result = min(count + p, self.result)
-                    return True
-                # pruning
-                elif count + p + 1 >= self.result:
-                    return False
-            if index < len(coins) - 1:
-                # take as many large coins as possible
-                if coins[index] < remain:
-                    dfs_pruning(coins, remain - coins[index], index, count + 1, True)
-                dfs_pruning(coins, remain, index + 1, count)
-
-        dfs_pruning(coins, amount, 0, 0)
-        return self.result if self.result < amount + 1 else -1
+        # Approach 1 dfs + pruning
+        # coins.sort(reverse=True)
+        # res = [float('inf')]
+        #
+        # def dfs(idx, remain, cnt):
+        #     if idx == len(coins) - 1:
+        #         if remain % coins[idx] == 0:
+        #             res[0] = min(res[0], cnt + remain / coins[idx])
+        #         return
+        #     for k in xrange(remain / coins[idx], -1, -1):
+        #         if cnt + k > res[0]: return
+        #         dfs(idx + 1, remain - coins[idx] * k, cnt + k)
+        #
+        # dfs(0, amount, 0)
+        # return -1 if res[0] == float('inf') else res[0]
