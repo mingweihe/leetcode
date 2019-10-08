@@ -1,3 +1,1 @@
-# leetcode-solutions
-leetcode-solutions (python)
-
+# My leetcode journey
