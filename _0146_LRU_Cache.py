@@ -1,9 +1,11 @@
+class Node:
+    def __init__(self, key, val):
+        self.key = key
+        self.val = val
+        self.prev = self.next = None
+
+
 class LRUCache(object):
-    class Node:
-        def __init__(self, key, val):
-            self.key = key
-            self.val = val
-            self.prev = self.next = None
 
     def __init__(self, capacity):
         """
@@ -11,8 +13,8 @@ class LRUCache(object):
         """
         self.capacity = capacity
         self.dic = dict()
-        self.head = self.Node(0, 0)
-        self.tail = self.Node(0, 0)
+        self.head = Node(0, 0)
+        self.tail = Node(0, 0)
         self.head.next = self.tail
         self.tail.prev = self.head
 
@@ -40,7 +42,7 @@ class LRUCache(object):
             self._remove(node)
             self._add(node)
             return
-        node = self.Node(key, value)
+        node = Node(key, value)
         if len(self.dic) == self.capacity:
             n = self.tail.prev
             self._remove(n)
