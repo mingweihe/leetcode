@@ -1,6 +1,3 @@
-from collections import Counter
-
-
 class Solution(object):
     def largestMultipleOfThree(self, digits):
         """
@@ -22,8 +19,9 @@ class Solution(object):
             if count[x]:
                 count[x] -= 1
                 return get_num(count)
-        for x in rs[3-remainder]:
-            if count[x] >= 2:
-                count[x] -= 2
+        for a, b in sorted(list(product(rs[3-remainder], repeat=2))):
+            if a == b and count[a] >= 2 or  a != b and count[a] and count[b]:
+                count[a] -= 1
+                count[b] -= 1
                 return get_num(count)
         return ''
