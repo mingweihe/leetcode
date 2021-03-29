@@ -24,7 +24,6 @@ class Solution(object):
         if x == y: return val
         visited.add(x)
         for v in graph[x]:
-            sub_rs = self.find(graph, v[0], y, val * v[1], visited)
-            if sub_rs != -1: return sub_rs
-        visited.discard(x)
+            cur = self.find(graph, v[0], y, val * v[1], visited)
+            if cur != -1: return cur
         return -1
